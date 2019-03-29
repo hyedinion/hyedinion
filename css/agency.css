@@ -166,13 +166,31 @@ img::-moz-selection {
 
 header.masthead {
   text-align: center;
-  color: white;
-  background-image: url("../img/h-bg.png");
+  color: whitesmoke;
+ 
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+
 }
+
+header.masthead:after{
+  background-image:url("../img/h-bg.jpg");
+    top:0;
+    left:0;
+    position:absolute;
+    background-size:100%;
+    opacity:0.7!important;
+    filter:alpha(opacity=50);
+    z-index:-1;
+    content:"";
+    width:100%;
+    height:100%;
+   
+}
+
+
 
 header.masthead .intro-text {
   padding-top: 150px;
@@ -200,6 +218,7 @@ header.masthead .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  text-shadow: 4px 4px 0px black, 8px 8px 0px red, 12px 12px 0px blue!important;
 }
 
 @media (min-width: 768px) {
