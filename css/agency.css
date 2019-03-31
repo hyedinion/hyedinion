@@ -167,7 +167,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: whitesmoke;
-  background-image:url("../img/h-bg.jpg");
+ 
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -178,7 +178,7 @@ header.masthead {
 }
 
 header.masthead:after{
-  
+  background-image:url("../img/h-bg.jpg");
     top:0;
     left:0;
     position:absolute;
